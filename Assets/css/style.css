@@ -1,0 +1,133 @@
+:root {
+    --grey: rgba(53, 53, 53, 0.973);
+    --white: white;
+    --purple: rgb(204, 83, 204);
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-poppins: Poppins, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --font-calibre: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+
+html {
+    font-size: 62.5%
+}
+
+.main-header {
+    display:block;
+    background-color: var(--grey);
+    height: 10rem;
+    width: 100%;
+    margin:0;
+    padding-bottom: 0.2rem;
+}
+
+.main-header .a {
+    position: absolute;
+    display: block;
+    color: var(--white);
+    font-family: var(--font-calibre);
+    padding-left: 3rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+.links ul {
+    padding-top: 3.5rem;
+    font-family: var(--font-sans);
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    display:flex;
+    justify-content: flex-end;
+}
+    
+.links ul li {
+    position: relative;
+    display: inline;
+    padding: 0 2rem;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+.main-sub,
+.heading-container {
+    height: 60rem;
+    width: 100%;
+    padding: 5rem;
+    position: relative;
+    background-color: var(--grey);
+}
+
+
+img {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-left: 50rem;
+    padding: 1.5rem;
+    border-left: 0.5rem solid var(--purple);
+    z-index: 3;
+}
+
+.hand {
+    transform: rotate(30deg);
+}
+
+.first-line,
+.second-line,
+.third-line {
+    position: absolute;
+    display: inline-block;
+    color: var(--white);
+    margin-left: 10rem;
+}
+
+
+.first-line {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-mono);
+    margin-top: 25rem;
+}
+
+.second-line {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--font-poppins);
+    margin-top: 28rem;
+    color: var(--purple)
+}
+
+.third-line {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-mono);
+    margin-top: 38rem;
+}
+
+main {
+    display: block;
+}
+
+.nav-header {
+    display: inline-block;
+    position: absolute; 
+    margin-left: 30rem;
+    padding: 1.5rem;
+    color: var(--purple);
+    font-size: 8rem;
+    font-family: var(--font-poppins);
+}
+
