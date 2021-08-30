@@ -134,14 +134,13 @@ body{
 }
 
 #work {
-    height: 60rem;
+    height: 70rem;
 
 }
 
 .about-me-header,
 .work-header,
 .contact-me-header {
-    display: block;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -164,12 +163,17 @@ body{
     font-size: 2rem;
 }
 
+.image-align {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    padding: 0.5rem;
+}
 
 .first-project {
     flex-wrap: wrap;
     width: auto;
     height: auto;
-    margin-left: 5rem;
 }
 
 
@@ -208,7 +212,7 @@ body{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     body{
         margin: 0 0;
         padding: 0 0;
@@ -218,19 +222,29 @@ body{
         }   
     .first-project{
         width: 400px;
+        padding: 0;
+    }
+    #aboutme,
+    #work,
+    #contactme {
+    flex-direction: column;
+    }
+    .about-me-header,
+    .work-header,
+    .contact-me-header,
+    .first-project,
+    .socials {
+        width: auto;
+        padding-left: 0;
+        text-align: center;
+    }
+    .about-me-content {
+        text-align: justify;
     }
 }
 
 @media screen and (max-width: 786px) {
-    .about-me-header,
-    .work-header,
-    .contact-me-header,
-    .about-me-content,
-    .first-project,
-    .socials {
-        width: 100%;
-    }
     .first-project{
-        width: 200px;
+        width: auto;
     }
 }
