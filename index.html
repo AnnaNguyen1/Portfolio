@@ -13,27 +13,48 @@
     <h1 class="a">A.</h1>
     <nav class="links">
         <ul>
-            <li>About Me</li>
-            <li>Work</li>
-            <li>Contact Me</li>
+            <li><a href="#aboutme" alt="link to about me section" class="link-section">About Me</a></li>
+            <li><a href="#work" alt="link to work section" class="link-section">Work</a></li>
+            <li><a href="#contactme" alt="link to contact me section" class="link-section">Contact Me</a></li>
         </ul>
     </nav>    
 </header>
 
 <body>
-    <div class="content">
-        <section class="main-sub">
-            <img src="Assets/images/profilephoto.JPG" alt="Profile photo of Anna">
-            <p class="first-line">Hi <span class="hand">🖐</span>, my name is </p>
-            <p class="second-line">Anna Nguyen</p>
-            <p class="third-line">Interesting fact: I love pandas 🐼, and coding! </p>
-        </section>    
-    </div>
-
-
     <main>
-        <section class="heading-container"></section>
-            <h1 class="nav-header">About Me</h1>
-            <p></p>
-    </main>
+        <section class="main-sub">
+            <img class="profile-photo" src="Assets/images/profilephoto.JPG" alt="Profile photo of Anna">
+            <align class="short-intro">
+                <p class="first-line">Hi <span class="hand">🖐</span>, my name is </p>
+                <p class="second-line">Anna Nguyen</p>
+                <p class="third-line">Interesting fact: I love pandas 🐼, and coding! </p>
+            </align>
+        </section>    
+
+        <section id="aboutme">
+            <h1 class="about-me-header" >ABOUT ME</h1>
+            <p class="about-me-content">Hello, my name is Anna, and I enjoy solving problems that consists of code! My interest in web development started when I joined BGL as a software support consultant, back in 2015. I had a little taste of coding during my years as a tester and business analyst and decided to branch my career in that direction.<br> I have had a fruitful career, worked as a Nail Technician while finishing my degree in Bachelor of Accountancy in 2012 and became a Chartered Accountant (CA) in 2019. I am currently employed at BGL as a Product Manager, managing Corporate Compliance Desktop Software. <br>I've seen many parts of the world, but the world of 0's and 1's is highly fascinating.</p>
+        </section>
+
+        <section id="work">
+            <h1 class="work-header">WORK</h1>
+            <a href="https://github.com/AnnaNguyen1/Code-Refactor/blob/main/README.md" target="_blank" class="first-project"><img src="Assets/images/CodeRefactor.bmp" alt="First Project- Code Refactoring" width="800px"></a>
+            <!--<a href="https://scratch.mit.edu/projects/559149650" target="_blank" class="second-project"><img src="Assets/images/CatMouse.bmp" alt="Second Project- Cat and Mouse Game" width="400px"></a>-->
+        </section>
+
+
+        <section id="contactme">
+            <h1 class="contact-me-header">CONTACT ME</h1>
+            <align class="contact-me-align">
+                <p class="contact-me-text">I may not be looking for new opportunities, however please do not hesitate to slide into my inbox, I don't bite!</p>
+                <ul class="socials">
+                    <li><a href="https://github.com/AnnaNguyen1" alt="Github" class="link-section">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/anna-bnguyen/" alt="LinkedIn" class="link-section">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/anarh_" alt="Twitter" class="linked-section">Twitter</a></li>
+                </ul>
+            </align>
+        </section>
+        </main>
+
+
 </body>
