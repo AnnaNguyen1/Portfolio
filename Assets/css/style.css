@@ -2,6 +2,7 @@
     --grey: rgba(53, 53, 53, 0.973);
     --white: white;
     --purple: rgb(204, 83, 204);
+    --light-purple: rgb(204, 83, 204, 0.8);
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --font-poppins: Poppins, sans-serif;
     --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -186,12 +187,20 @@ body{
 .image-header {
     position: absolute;
     top: 50%;
-    bottom: 50%;
+    left: 50%;
     transform: translate( -50%, -50%);
     text-align: center;
     color: var(--white);
-    background-color: var(--purple);
-    padding: 1rem 2rem;;
+    background-color: var(--light-purple);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: var(--font-sans);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-header:hover {
+    opacity: 1;
 }
 
 .first-project,
@@ -217,6 +226,7 @@ body{
 .first-project img:hover,
 .second-project img:hover,
 .third-project img:hover {
+    transition: all 0.5s ease-in-out;
     box-shadow: inset 0px 0px 8px var(--purple), 0 0 15px var(--purple);
     opacity: .2;
 }
@@ -288,6 +298,7 @@ body{
     }
     .image-align {
         justify-content: center;
+        
     }
 }
 
@@ -299,6 +310,27 @@ body{
     .work-header,
     .contact-me-header {
         margin-top: 5rem;
+    }
+    .about-me-header {
+        margin-bottom: 3rem;
+    }
+    .about-me-content {
+        padding-right: 5rem;
+    }
+    .contact-me-text {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-header {
+        margin-bottom: 3rem;
+    }
+    #work {
+        height: 90rem;
+    }
+    .image-align {
+        margin-left: 0;
     }
 }
 
