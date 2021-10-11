@@ -1,336 +1,95 @@
 :root {
-    --grey: rgba(53, 53, 53, 0.973);
-    --white: white;
-    --purple: rgb(204, 83, 204);
-    --light-purple: rgb(204, 83, 204, 0.8);
-    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-poppins: Poppins, sans-serif;
-    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    --font-calibre: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    --font-clattering: "American Typewriter", Poppins, sans-serif;
+  --poppins: Poppins, sans-serif;
+  --fatface: "Abril Fatface", cursive;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --black: black;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-} 
-    
-/* Standard sizing of the whole page is 10px */
-html {
-    font-size: 62.5%
+body {
+  margin: 0 80px;
 }
 
-/* Apply purple backdrop on each side */
-body{
-    margin: 0 15rem;
-    padding: 0 15rem;
-    background-color: var(--purple);
+#nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Header containing my initial as well as the links to sections of the page */
-.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 10rem;
-    width: 100%;
-    padding-bottom: 0.2rem;
-    background-color: var(--grey);
-    color: var(--white);
-    font-family: var(--font-sans);
+p {
+  margin-bottom: 10px;
 }
 
-/* Display initial on the left corner of header */
-.main-header .a {
-    position: relative;
-    display: inline-block;
-    font-family: var(--font-calibre);
-    padding-left: 3rem;
-    padding-top: 2rem;
-    font-size: 4rem;
+#navbarNavAltMarkup {
+  justify-content: right;
 }
 
-/* Navigation UI */
-.links {
-    padding-top: 3.5rem;
-    font-family: var(--font-sans);
-    font-size: 2rem;
-    color: var(--white);
-    text-transform: uppercase;
+.poppins {
+  font-family: var(--poppins);
 }
 
-/* Aline nav links in a single line on the right side of header */
-.links ul li {
-    position: relative;
-    display: inline-block;
-    padding: 0 2rem;
-    list-style-type: none;
-    transition: all 0.5s ease-in-out;
+.fatface {
+  font-family: var(--fatface);
 }
 
-.link-section {
-    color: var(--white);
+.mono {
+  font-family: var(--font-mono);
 }
 
-.links ul li:hover {
-    text-shadow: 0.5rem, 1rem, 1.5rem, var(--purple);
+.sans {
+  font-family: var(--font-sans);
 }
 
-/* Container for the profile image and short intro */
-.main-sub {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--grey);
-    justify-content: center;
-    padding-top: 5rem;
+.nav-margin {
+  margin: 20px 100px;
 }
 
-/* Container for three lined intro */
-.short-intro {
-    display: flex;
-    flex-direction: column;
+.l-space-4 {
+  letter-spacing: 4px;
 }
 
-/* Profile image showing on the left */
+.l-space-neg {
+  letter-spacing: -0.5px;
+}
+
+.intro-line {
+  margin-bottom: 0px;
+}
+
 .profile-photo {
-    width: 30%;
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1.5rem;
-    border-left: 0.5rem solid var(--purple);
+  width: 50%;
+  padding: 12px;
+  border-left: 3px solid var(--black);
+  border-top: 3px solid var(--black);
 }
 
-/* Font UI for intro text and contact me text */
-.first-line,
-.second-line,
-.third-line,
-.contact-me-text,
-.socials {
-    color: var(--white);
-    padding-left: 5rem;
-    font-family: var(--font-mono);
-    font-size: 2rem;
-    flex-wrap: wrap;
+.background {
+  position: fixed;
+  bottom: 0;
+  font-size: 200px;
+  color: rgb(241, 241, 241);
+  margin-left: -50px;
+  z-index: -1;
 }
 
-.first-line {
-    padding-top: 20rem;
+@media screen and (max-width: 375px) {
+  .nav-margin {
+    margin: 20px 10px;
+  }
+  .profile-photo {
+    width: 80%;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .intro-line {
+    line-height: 30px;
+    margin-left: 40px;
+  }
+  body {
+    margin: 0;
+  }
 }
-
-.hand {
-    transform: rotate(20deg);
-}
-
-.second-line {
-    font-size: 8rem;
-    font-weight: bold;
-    font-family: var(--font-clattering);
-    color: var(--purple)
-}
-
-.third-line {
-    line-height: 3rem;
-}
-
-/* Bottom section header */
-#aboutme,
-#work,
-#contactme {
-    display:flex;
-    align-items: center;
-    height: 50rem;
-    background-color: var(--grey);
-}
-
-#work {
-    height: 70rem;
-
-}
-
-.about-me-header,
-.work-header,
-.contact-me-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 5rem;
-    font-weight: bold;
-    font-family: var(--font-poppins);
-    width: 25%;
-    height: 100%;
-    color: var(--purple);
-    padding-left: 5rem;
-}
-
-.about-me-content {
-    flex: 1 1 100rem;
-    flex-wrap: wrap;
-    color: var(--white);
-    padding-left: 5rem;
-    padding-right: 10rem;
-    font-family: var(--font-mono);
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-.image-align {
-    flex: 4;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 5rem;
-}
-.image-container {
-    position: relative;
-}
-
-.image-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    text-align: center;
-    color: var(--white);
-    background-color: var(--light-purple);
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    font-family: var(--font-sans);
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
-.image-header:hover {
-    opacity: 1;
-}
-
-.first-project,
-.second-project,
-.third-project {
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-    margin: 0.2rem;
-}
-
-.first-project {
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-}
-
-.first-project img {
-    flex: 1 0 400px;
-    z-index: 3;
-}
-
-.first-project img:hover,
-.second-project img:hover,
-.third-project img:hover {
-    transition: all 0.5s ease-in-out;
-    box-shadow: inset 0px 0px 8px var(--purple), 0 0 15px var(--purple);
-    opacity: .2;
-}
-
-.second-project {
-    position: relative;
-}
-
-.contact-me-align {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 5rem;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 5rem;
-    position: inline-block;
-    font-size: 2rem;
-    list-style-type: none;
-    color: var(--white);
-    
-}
-
-
-@media screen and (max-width: 1450px) {
-    body{
-        margin: 0 40px;
-        padding: 0 40px;
-    } 
-    .first-project img {
-        width: 600px;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-    body{
-        margin: 0 0;
-        padding: 0 0;
-    }
-    .first-line {
-            padding-top: 2rem;
-        }   
-    .first-project{
-        width: 400px;
-        padding: 0;
-    }
-    #aboutme,
-    #work,
-    #contactme {
-    flex-direction: column;
-    }
-    .about-me-header,
-    .work-header,
-    .contact-me-header,
-    .first-project,
-    .socials {
-        width: auto;
-        padding-left: 0;
-        text-align: center;
-    }
-    .about-me-content {
-        text-align: justify;
-    }
-    .image-align {
-        justify-content: center;
-        
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .first-project{
-        width: auto;
-    }
-    .about-me-header,
-    .work-header,
-    .contact-me-header {
-        margin-top: 5rem;
-    }
-    .about-me-header {
-        margin-bottom: 3rem;
-    }
-    .about-me-content {
-        padding-right: 5rem;
-    }
-    .contact-me-text {
-        padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about-me-header {
-        margin-bottom: 3rem;
-    }
-    #work {
-        height: 90rem;
-    }
-    .image-align {
-        margin-left: 0;
-    }
-}
-
