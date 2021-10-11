@@ -7,8 +7,10 @@
   --black: black;
 }
 
-body {
-  margin: 0 80px;
+body,
+#about-me,
+#work-container {
+  margin: 0 100px;
 }
 
 #nav-container {
@@ -45,8 +47,12 @@ p {
   margin: 20px 100px;
 }
 
-.l-space-4 {
-  letter-spacing: 4px;
+#head-container {
+  margin: 100px 0;
+}
+
+.font-size-lg {
+  font-size: 60px;
 }
 
 .l-space-neg {
@@ -58,7 +64,7 @@ p {
 }
 
 .profile-photo {
-  width: 50%;
+  width: 60%;
   padding: 12px;
   border-left: 3px solid var(--black);
   border-top: 3px solid var(--black);
@@ -69,8 +75,46 @@ p {
   bottom: 0;
   font-size: 200px;
   color: rgb(241, 241, 241);
-  margin-left: -50px;
-  z-index: -1;
+  margin-left: -130px;
+  z-index: -2;
+}
+
+#background-container {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  background-color: #000;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.container-title-after::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -25px;
+  left: 140px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: grey;
+}
+
+.container-title-before::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -25px;
+  left: 140px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: grey;
+}
+
+.about-me-text {
+  padding: 10px;
 }
 
 @media screen and (max-width: 375px) {
@@ -85,11 +129,12 @@ p {
     padding: 20px;
     margin-bottom: 10px;
   }
-  .intro-line {
-    line-height: 30px;
-    margin-left: 40px;
+  .intro-line,
+  #resume {
+    margin-left: 45px;
   }
-  body {
+  body,
+  #about-me {
     margin: 0;
   }
 }

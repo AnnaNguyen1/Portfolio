@@ -37,20 +37,20 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav" id="nav-links">
             <a class="nav-link" href="#">ABOUT ME</a>
-            <a class="nav-link" href="#">WORK</a>
-            <a class="nav-link" href="#">CONTACT ME</a>
+            <a class="nav-link" href="#">PROJECTS</a>
+            <a href="/Assets/files/Anna Nguyen CV 2021.pdf" class="btn btn-outline-dark mx-2" target="_blank" id="resume"><small>Resume</small></a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div id="background">
+    <div id="background-container">
       <h1 class="background fatface">Developer.</h1>
     </div>
-    
+
     <main>
-      <container id="header" class="container d-flex">
-        <div class="row align-items-center" id="head-container">
+      <container id="header-container" class="container d-flex">
+        <div class="row align-items-center z-index-1" id="head-container">
           <div id="profile-img" class="col-12 col-lg-6">
             <img
               class="profile-photo float-end d-block"
@@ -61,17 +61,35 @@
           <div id="profile-desc" class="col-12 col-lg-6">
             <align class="short-intro d-flex flex-wrap poppins">
               <p class="intro-line col-12 l-space-neg">Hi <span class="hand">🖐</span>, my name is</p>
-              <p class="intro-line col-12 fatface fs-1 l-space-4">ANNA NGUYEN</p>
+              <p class="intro-line col-12 fatface font-size-lg">ANNA NGUYEN</p>
               <p class="intro-line col-12">
-                I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, SQL and more! 
+                I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, MySQL and more! 
               </p>
           </div>
         </div>
       </container>
 
-      <container id="about-me" class="container d-flex">
+      <container id="about-me" class="container d-flex flex-wrap column mt-5">
+        <div class="container-title-after fatface col-7 z-index-1"><h2>About Me.</h2></div>
+        <div class="about-me-text poppins col-12 col-lg-8 z-index-1">
+          <p><small>Hello, my name is Anna, and I enjoy solving problems that consists of
+          code! My interest in web development started when I joined BGL as a
+          software support consultant, back in 2015. I had a little taste of
+          coding during my years as a tester and business analyst and decided to
+          branch my career in that direction.<br />
+          I have had a fruitful career, worked as a Nail Technician while
+          finishing my degree in Bachelor of Accountancy in 2012 and became a
+          Chartered Accountant (CA) in 2019. I am currently employed at BGL as a
+          Product Manager, managing Corporate Compliance Desktop Software.
+          <br />Please reach out to me if you feel like a chat!</small></p></div>
+      </container>
+
+      <container id="work-container" class="container d-flex flex-wrap column mt-5 justify-content-end">
+        <div class="container-title-before fatface col-7 z-index-1"><h2 class="text-right">Projects.</h2></div>
 
       </container>
+
     </main>
+    <script src="Assets/js/script.js"></script>
   </body>
 </html>
