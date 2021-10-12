@@ -36,8 +36,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav" id="nav-links">
-            <a class="nav-link" href="#">ABOUT ME</a>
-            <a class="nav-link" href="#">PROJECTS</a>
+            <a class="nav-link" href="#"><b>ABOUT ME</b></a>
+            <a class="nav-link" href="#"><b>PROJECTS</b></a>
+            <a class="nav-link" href="#"><b>CONTACT</b></a>
             <a href="/Assets/files/Anna Nguyen CV 2021.pdf" class="btn btn-outline-dark mx-2" target="_blank" id="resume"><small>Resume</small></a>
           </div>
         </div>
@@ -49,7 +50,7 @@
     </div>
 
     <main>
-      <container id="header-container" class="container d-flex">
+      <container id="header-container" class="container d-flex my-7">
         <div class="row align-items-center z-index-1" id="head-container">
           <div id="profile-img" class="col-12 col-lg-6">
             <img
@@ -60,33 +61,79 @@
           </div>
           <div id="profile-desc" class="col-12 col-lg-6">
             <align class="short-intro d-flex flex-wrap poppins">
-              <p class="intro-line col-12 l-space-neg">Hi <span class="hand">🖐</span>, my name is</p>
-              <p class="intro-line col-12 fatface font-size-lg">ANNA NGUYEN</p>
-              <p class="intro-line col-12">
-                I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, MySQL and more! 
+              <p class="intro-line col-12 l-space-neg"><small><b>Hi <span class="hand">🖐</span>, my name is</b></small></p>
+              <p class="intro-line name col-12 fatface">Anna Nguyen</p>
+              <p class="intro-line col-12 mt-md-2">
+                <b>I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, MySQL and more! </b>
               </p>
           </div>
         </div>
       </container>
 
       <container id="about-me" class="container d-flex flex-wrap column mt-5">
-        <div class="container-title-after fatface col-7 z-index-1"><h2>About Me.</h2></div>
-        <div class="about-me-text poppins col-12 col-lg-8 z-index-1">
-          <p><small>Hello, my name is Anna, and I enjoy solving problems that consists of
-          code! My interest in web development started when I joined BGL as a
-          software support consultant, back in 2015. I had a little taste of
-          coding during my years as a tester and business analyst and decided to
-          branch my career in that direction.<br />
-          I have had a fruitful career, worked as a Nail Technician while
-          finishing my degree in Bachelor of Accountancy in 2012 and became a
-          Chartered Accountant (CA) in 2019. I am currently employed at BGL as a
-          Product Manager, managing Corporate Compliance Desktop Software.
-          <br />Please reach out to me if you feel like a chat!</small></p></div>
+        <section class="row">
+          <div class="col-1 col-sm-2"></div>
+          <div class="container-title-after fatface col-11 col-sm-8 z-index-1"><h2>About Me.</h2></div>
+          <div class="col-1 col-sm-2"></div>
+        </section>
+        <section class="row">
+          <div class="col-md-1"></div>
+          <div class="about-me-text poppins col-11 col-sm-10 z-index-1 mt-3 mt-md-5">
+            <p><small><b>Thank you for visting my page! My name is Anna, and I enjoy solving problems that consists of
+            code! <br><br>My interest in web development started when I joined BGL as a
+            software support consultant, back in 2015. I had a little taste of
+            coding during my years as a tester and business analyst and decided to
+            branch my career in that direction.<br />
+            I have had a fruitful career, started as a Nail Technician while
+            finishing my degree in Bachelor of Accountancy in 2012 and became a
+            Chartered Accountant (CA) in 2019. I am currently employed at BGL as a
+            Product Manager, managing Corporate Compliance Desktop Software.
+            <br />Please reach out to me if you feel like a chat!</b></small></p></div>
+          <div class="col-md-1"></div>
+        </section>
+        
       </container>
 
-      <container id="work-container" class="container d-flex flex-wrap column mt-5 justify-content-end">
-        <div class="container-title-before fatface col-7 z-index-1"><h2 class="text-right">Projects.</h2></div>
-
+      <container id="work-container" class="container">
+        <div class="container-title-before fatface col-11 d-flex flex-wrap column mt-5 justify-content-end"><h2 class="text-right z-index-1">Projects.</h2></div>
+        <div class="card-box d-flex flex-wrap row mt-5 mx-2 mx-md-5">
+          <div class="row">
+            <div class="col-2 col-md-2"></div>
+            <div class="col-12 col-md-8">
+              <div class="card my-sm-3 text-center">
+                <div class="card-body">
+                  <h5 class="card-title poppins">Tracking Journal</h5>
+                  <img class="card-img-top work-img" src="/Assets/images/TrackingJournal.bmp" alt="Card image cap">
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-12 col-sm-4 mt-md-5">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title poppins">Javascript Code Quiz</h5>
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-md-5">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title poppins">Weather Dashboard</h5>
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
       </container>
 
     </main>

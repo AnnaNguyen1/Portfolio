@@ -7,10 +7,8 @@
   --black: black;
 }
 
-body,
-#about-me,
-#work-container {
-  margin: 0 100px;
+body {
+  margin: 0 130px;
 }
 
 #nav-container {
@@ -44,7 +42,7 @@ p {
 }
 
 .nav-margin {
-  margin: 20px 100px;
+  margin: 20px 150px;
 }
 
 #head-container {
@@ -67,7 +65,11 @@ p {
   width: 60%;
   padding: 12px;
   border-left: 3px solid var(--black);
-  border-top: 3px solid var(--black);
+  /* border-top: 2px solid var(--black); */
+}
+
+.name {
+  font-size: 60px;
 }
 
 .background {
@@ -77,6 +79,11 @@ p {
   color: rgb(241, 241, 241);
   margin-left: -130px;
   z-index: -2;
+}
+
+.my-7 {
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
 }
 
 #background-container {
@@ -105,8 +112,8 @@ p {
   content: "";
   display: block;
   position: relative;
-  top: -25px;
-  left: 140px;
+  top: 20px;
+  right: 10px;
   width: 300px;
   height: 1px;
   margin-left: 20px;
@@ -115,9 +122,24 @@ p {
 
 .about-me-text {
   padding: 10px;
+  text-align: justify;
 }
 
-@media screen and (max-width: 375px) {
+.work-img {
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: rgb(184, 184, 184);
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+}
+
+.work-img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+@media screen and (max-width: 380px) {
   .nav-margin {
     margin: 20px 10px;
   }
@@ -131,10 +153,27 @@ p {
   }
   .intro-line,
   #resume {
-    margin-left: 45px;
+    margin-left: 20px;
   }
   body,
   #about-me {
-    margin: 0;
+    margin: 0 10px;
   }
-}
+  .container-title-after::after,
+  .container-title-before::before {
+    width: 180px;
+  }
+  .container-title-after::after {
+    left: 100px;
+  }
+  .my-7 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .name {
+    font-size: 40px;
+  }
+  #head-container {
+    margin: 50px 0;
+  }
+
