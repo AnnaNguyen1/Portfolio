@@ -36,9 +36,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav" id="nav-links">
-            <a class="nav-link" href="#"><b>ABOUT ME</b></a>
-            <a class="nav-link" href="#"><b>PROJECTS</b></a>
-            <a class="nav-link" href="#"><b>CONTACT</b></a>
+            <a class="nav-link" href="#about-me"><b>ABOUT ME</b></a>
+            <a class="nav-link" href="#work-container"><b>PROJECTS</b></a>
+            <a class="nav-link" href="#contact-container"><b>CONTACT</b></a>
             <a href="/Assets/files/Anna Nguyen CV 2021.pdf" class="btn btn-outline-dark mx-2" target="_blank" id="resume"><small>Resume</small></a>
           </div>
         </div>
@@ -64,7 +64,7 @@
               <p class="intro-line col-12 l-space-neg"><small><b>Hi <span class="hand">🖐</span>, my name is</b></small></p>
               <p class="intro-line name col-12 fatface">Anna Nguyen</p>
               <p class="intro-line col-12 mt-md-2">
-                <b>I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, MySQL and more! </b>
+                <b><small>I know HTML5, CSS, Javascript, <br>Bootscrap, jQuery, MySQL and more! </small></b>
               </p>
           </div>
         </div>
@@ -83,7 +83,7 @@
             code! <br><br>My interest in web development started when I joined BGL as a
             software support consultant, back in 2015. I had a little taste of
             coding during my years as a tester and business analyst and decided to
-            branch my career in that direction.<br />
+            become a full stack web developer student.<br />
             I have had a fruitful career, started as a Nail Technician while
             finishing my degree in Bachelor of Accountancy in 2012 and became a
             Chartered Accountant (CA) in 2019. I am currently employed at BGL as a
@@ -95,48 +95,88 @@
       </container>
 
       <container id="work-container" class="container">
-        <div class="container-title-before fatface col-11 d-flex flex-wrap column mt-5 justify-content-end"><h2 class="text-right z-index-1">Projects.</h2></div>
+        <section class="row">
+          <div class="col-1 col-sm-2"></div>
+          <div class="container-title-before fatface col-10 col-sm-8 d-flex flex-wrap column mt-5 justify-content-end"><h2 class="text-right z-index-1">Projects.</h2></div>
+          <div class="col-2"></div>
+        </section>
         <div class="card-box d-flex flex-wrap row mt-5 mx-2 mx-md-5">
           <div class="row">
-            <div class="col-2 col-md-2"></div>
-            <div class="col-12 col-md-8">
-              <div class="card my-sm-3 text-center">
-                <div class="card-body">
-                  <h5 class="card-title poppins">Tracking Journal</h5>
-                  <img class="card-img-top work-img" src="/Assets/images/TrackingJournal.bmp" alt="Card image cap">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-2 col-xl-1"></div>
+            <div class="col-12 col-xl-10">
+              <div class="card border-dark my-sm-3 text-center">
+                <div class="card-body card-1">
+                  <h5 class="card-title card-1 tracking-journal poppins z-index-2"><b>Project 1: Tracking Journal</b></h5>
+                  <a href="https://annanguyen1.github.io/Track-Journal/homepage.html" target="_blank"><img class="card-img-top work-img" src="/Assets/images/TrackingJournal-1.bmp" alt="Track Journal Homepage" height="300px"></a>
+                  <p class="card-text mt-md-3 poppins"><small><b>Journal that allows users to search for parks within a given radius from an entered address and journal their experience.
+                    <br><br>HTML5, CSS, Javascript, Google Maps API, jQuery</b></small></p>
+                    <ul class="d-flex flex-wrap justify-content-center mt-md-1">
+                      <li><a href="https://github.com/AnnaNguyen1/Track-Journal" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
+                      <li><a href="https://annanguyen1.github.io/Track-Journal/homepage.html" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
+                    </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-12 col-sm-4 mt-md-5">
-              <div class="card text-center">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-1"></div>
+            <div class="col-12 col-xl-5 mt-3 mt-md-5">
+              <div class="card border-dark text-center">
                 <div class="card-body">
-                  <h5 class="card-title poppins">Javascript Code Quiz</h5>
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title card-2 poppins"><b>Javascript Code Quiz</b></h5>
+                  <a href="https://annanguyen1.github.io/Code-Quiz/" target="_blank"><img class="card-img-top work-img" src="/Assets/images/CodeQuiz.bmp" alt="Javascript Code Quiz Page" height="228px"></a>
+                  <p class="card-text poppins mt-md-3"><small><b>Timed Javascript quiz that tests users knowledge on basic Javascript. Time will be deducted if questions are answered incorrectly.
+                  <br><br>HTML5, CSS, Javascript, Moment.js, Bootstrap</b></small></p>
+                  <ul class="d-flex flex-wrap justify-content-center mt-md-1">
+                    <li><a href="https://github.com/AnnaNguyen1/Code-Quiz" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
+                    <li><a href="https://annanguyen1.github.io/Code-Quiz/" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-4 mt-md-5">
-              <div class="card text-center">
+            <div class="col-12 col-xl-5 mt-3 mt-md-5">
+              <div class="card border-dark text-center">
                 <div class="card-body">
-                  <h5 class="card-title poppins">Weather Dashboard</h5>
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title card-3 poppins"><b>Weather Dashboard</b></h5>
+                  <a href="https://annanguyen1.github.io/Weather-Dashboard/" target="_blank"><img class="card-img-top work-img" src="/Assets/images/WeatherDashboard.bmp" alt="Javascript Code Quiz Page" height="228px"></a>
+                  <p class="card-text poppins mt-md-3"><small><b>Dashboard that displays the current weather and 5 day forecast for a certain city that is entered. Cities searched will be saved for future reference.
+                    <br><br>HTML5, CSS, JS, Moment.js, Bootstrap, Open Weather API</b></small></p>
+                  <ul class="d-flex flex-wrap justify-content-center mt-md-1">
+                    <li><a href="https://github.com/AnnaNguyen1/Weather-Dashboard" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
+                    <li><a href="https://annanguyen1.github.io/Weather-Dashboard/" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-xl-1"></div>
           </div>
         </div>
       </container>
 
+      <container id="contact-container" class="container d-flex flex-wrap column">
+        <section class="row">
+          <div class="col-sm-2"></div>
+          <div class="container-title-after-2 fatface col-11 col-sm-8 z-index-1"><h2>Get in touch.</h2></div>
+          <div class="col-sm-2"></div>
+        </section>
+        <section class="column z-index-1">
+          <section>
+            <div class="about-me-text poppins mt-3 mt-md-5 z-index-1">
+              <p class="contact-text"><small><b>I am currently not looking for new opportunities, however I would love to connect! Feel free to follow my social platforms, or shoot me an email to say hi.</b></small></p></div>
+          </section>
+          
+        </section>
+      </container>
     </main>
-    <script src="Assets/js/script.js"></script>
+    <footer>
+      <section class="row contact-icons">
+        <ul class="d-flex flex-wrap justify-content-center mt-md-3 col-12 z-index-1">
+          <li><a href="https://github.com/AnnaNguyen1/" class="mx-4" target="_blank"><img src="/Assets/images/github.png" width="30px" height="30px" class="z-index-1"></a></li>
+          <li><a href="https://www.linkedin.com/in/anna-bnguyen/" class="mx-4" target="_blank"><img src="/Assets/images/linkedin.png" width="30px" height="30px" class="z-index-1"></a></li>
+          <li><a href="mailto::n.annabich@gmail.com" class="mx-4" target="_blank"><img src="/Assets/images/email.png" width="30px" height="30px" class="z-index-1"></a></li>
+          <li><a href="https://wa.me/61407591120" class="mx-4" target="_blank"><img src="/Assets/images/whatsapp.png" width="30px" height="30px" class="z-index-1"></a></li>
+        </ul>
+      </section>
+      <p class= "poppins text-center">Built by Anna Nguyen.</p>
+    </footer>
   </body>
 </html>

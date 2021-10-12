@@ -5,6 +5,7 @@
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --black: black;
+  --grey: grey;
 }
 
 body {
@@ -76,14 +77,14 @@ p {
   position: fixed;
   bottom: 0;
   font-size: 200px;
-  color: rgb(241, 241, 241);
-  margin-left: -130px;
+  color: rgb(233, 233, 233);
+  margin-left: -100px;
   z-index: -2;
 }
 
 .my-7 {
   margin-top: 3.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 #background-container {
@@ -96,7 +97,16 @@ p {
   z-index: 1;
 }
 
-.container-title-after::after {
+.z-index-2 {
+  z-index: 2;
+}
+
+#about-me {
+  padding-top: 30px;
+}
+
+.container-title-after::after,
+.container-title-after-2::after {
   content: "";
   display: block;
   position: relative;
@@ -106,6 +116,11 @@ p {
   height: 1px;
   margin-left: 20px;
   background-color: grey;
+}
+
+.container-title-after-2::after {
+  width: 280px;
+  left: 170px;
 }
 
 .container-title-before::before {
@@ -125,39 +140,90 @@ p {
   text-align: justify;
 }
 
-.work-img {
-  filter: url(filters.svg#grayscale);
-  /* Firefox 3.5+ */
-  filter: rgb(184, 184, 184);
-  /* IE6-9 */
-  -webkit-filter: grayscale(1);
-  /* Google Chrome & Safari 6+ */
+.card-details {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
+li {
+  list-style-type: none;
+}
+
+.github,
+.application,
+.work-img {
+  -webkit-transform: scale(0.98);
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+.github:hover,
+.application:hover,
 .work-img:hover {
   filter: none;
-  -webkit-filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1);
+  opacity: 1;
 }
 
-@media screen and (max-width: 380px) {
+.right-align {
+  text-align: right;
+}
+
+.contact-icons {
+  margin-top: 60px;
+}
+
+#contact-container {
+  margin-top: 100px;
+}
+
+.contact-text {
+  padding: 0 70px;
+}
+
+@media screen and (max-width: 992px) {
   .nav-margin {
     margin: 20px 10px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .profile-photo {
-    width: 80%;
+    width: 50%;
     float: none !important;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     margin-bottom: 10px;
   }
-  .intro-line,
-  #resume {
-    margin-left: 20px;
+  #profile-desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .my-7 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  #head-container {
+    margin: 50px 0;
   }
   body,
   #about-me {
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body,
+  #about-me,
+  #contact-container {
+    margin: 0 10px;
+  }
+  #contact-container {
+    margin-top: 60px;
   }
   .container-title-after::after,
   .container-title-before::before {
@@ -166,6 +232,16 @@ p {
   .container-title-after::after {
     left: 100px;
   }
+  .container-title-before::before {
+    right: 110px;
+  }
+  .container-title-after-2::after {
+    left: 130px;
+    width: 150px;
+  }
+  .contact-text {
+    padding: 0;
+  }
   .my-7 {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -173,7 +249,28 @@ p {
   .name {
     font-size: 40px;
   }
-  #head-container {
-    margin: 50px 0;
+  .card-img-top {
+    display: none;
   }
-
+  .card-1::before,
+  .card-2::before,
+  .card-3::before {
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
+  .card-1::before {
+    background-image: url("../images/TrackingJournal-1.bmp");
+  }
+  .card-2::before {
+    background-image: url("../images/CodeQuiz.bmp");
+  }
+  .card-3::before {
+    background-image: url("../images/WeatherDashboard.bmp");
+  }
+}
