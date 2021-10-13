@@ -237,13 +237,17 @@ li {
   margin-right: 200px;
 }
 
+@media screen and (max-width: 1700px) {
+  .work-margin {
+    margin: 0 0px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .work-img {
     height: 300px;
   }
-  .work-margin {
-    margin: 0 0px;
-  }
+
   .tech-text {
     font-size: 12px;
   }
@@ -331,5 +335,11 @@ li {
   }
   .name {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container-title-before::before {
+    right: 10px;
   }
 }
