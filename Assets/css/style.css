@@ -27,6 +27,10 @@ p {
   justify-content: right;
 }
 
+.navbar-collapse.in {
+  display: block !important;
+}
+
 .poppins {
   font-family: var(--poppins);
 }
@@ -186,6 +190,10 @@ li {
 
 .project-card {
   position: relative;
+}
+
+.nav-link {
+  text-align: right;
 }
 
 .content-display {
