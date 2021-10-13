@@ -6,6 +6,7 @@
     system-ui, sans-serif;
   --black: black;
   --grey: grey;
+  --white: white;
 }
 
 body {
@@ -151,34 +152,11 @@ li {
 
 .github,
 .application {
-  -webkit-transform: scale(0.98);
+  -webkit-transform: scale(0.9);
   -webkit-transition: all 0.5s ease-in-out;
-  opacity: 0.9;
+  opacity: 0.7;
   object-fit: cover;
   border-radius: 2% !important;
-}
-
-.image-div {
-  position: relative;
-}
-
-.image-div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-}
-
-.image-div:hover::before,
-.image-div:focus::before {
-  transition: all 0.5s ease-in-out;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.1),
-    rgb(0, 0, 0, 0.8)
-  );
 }
 
 .work-img {
@@ -206,30 +184,43 @@ li {
   margin-top: 100px;
 }
 
-.contact-text {
-  padding: 0 70px;
+.project-card {
+  position: relative;
 }
 
 .content-display {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
   opacity: 0;
-  bottom: 8px;
-  left: 16px;
-  z-index: 4;
+  transition: 0.5s ease;
+  border-radius: 2% !important;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0, 1));
 }
 
-.content-display:hover {
-  display: block;
-  -webkit-transition: all 0.5s ease-in-out;
-  opacity: 0.8;
+.project-card:hover .content-display {
+  opacity: 1;
 }
 
 .content-text {
   position: absolute;
-  color: white;
-  bottom: 15px;
-  left: 0;
-  padding: 20px 15px;
+  bottom: 8px;
+  text-align: left;
+  padding-left: 10px;
+  color: var(--white);
+}
+
+.contact-text {
+  padding: 0 100px;
+}
+
+.margin-content {
+  margin: 40px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -298,28 +289,8 @@ li {
   .name {
     font-size: 40px;
   }
-  .card-img-top {
-    display: none;
-  }
-  .card-1::before,
-  .card-2::before,
-  .card-3::before {
-    content: "";
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-  }
-  .card-1::before {
-    background-image: url("../images/TrackingJournal-1.bmp");
-  }
-  .card-2::before {
-    background-image: url("../images/CodeQuiz.bmp");
-  }
-  .card-3::before {
-    background-image: url("../images/WeatherDashboard.bmp");
+
+  .content-display {
+    opacity: 1;
   }
 }
