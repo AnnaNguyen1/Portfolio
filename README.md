@@ -3,6 +3,7 @@
 ## Website
 
 Welcome to my Github Portfolio repo.
+
 As a Full Stack Developer student, I have created a portfolio to showcase skills gained and projects I've created so far. This page will continuously be updated to include my latest work.
 
 Resume and other contact details are attached, therefore feel free to drop by to say hi!
