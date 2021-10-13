@@ -1,16 +1,22 @@
 # Anna Nguyen's Portfolio
 
 ## Website
-This website displays Anna Nguyen's portfolio. It includes an image of herself, a short introduction, About me section, Work section that shows her first, second and third application she has worked on and a Contact Me section to communicate with her on several social media platforms.
 
-If you click on the images that contains Anna's work applications, it will either take you to the deployed application or the game she has created.
+Welcome to my Github Portfolio repo.
+As a Full Stack Developer student, I have created a Portfolio which showcases my skills gained and projects I've created so far. This page will continuously be updated to include my latest work.
+
+Resume and other contact details are attached, therefore feel free to drop by to say hi!
 
 HTML and CSS was used to create the deployed application on Github.
 
-# Preview of the Portfolio
+## Demo of Portfolio
 
-![portfolio image](./Assets/images/annaPortfolio.bmp)
+![Portfolio gif](./Assets/images/Demo.gif)
 
-# Link to deployed application
+## Mobile interface
+
+![Portfolio Mobile gid](./Assets/images/MobileDemo.gif)
+
+## Link to deployed application
 
 https://annanguyen1.github.io/Portfolio/

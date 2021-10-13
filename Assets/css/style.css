@@ -72,6 +72,7 @@ p {
   padding: 12px;
   border-left: 3px solid var(--black);
   /* border-top: 2px solid var(--black); */
+  border-radius: 50%;
 }
 
 .name {
@@ -278,12 +279,23 @@ li {
   #head-container {
     margin: 50px 0;
   }
-  body,
+  /* body, */
   #about-me {
     margin: 0 10px;
   }
   .content-display {
     opacity: 1;
+  }
+  .container-title-after::after,
+  .container-title-before::before {
+    width: 170px;
+  }
+  .container-title-before::before {
+    right: 100px;
+  }
+  .container-title-after-2::after {
+    left: 140px;
+    width: 200px;
   }
 }
 
