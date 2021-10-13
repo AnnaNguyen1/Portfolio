@@ -14,9 +14,9 @@ HTML and CSS was used to create the deployed application on Github.
 
 https://annanguyen1.github.io/Portfolio/
 
-## Demo of Portfolio
+## Portfolio page
 
-![Portfolio gif](./Assets/images/Demo.gif)
+![Portfolio gif](./Assets/images/PortfolioImage.bmp)
 
 ## Mobile interface
 
