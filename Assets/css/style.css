@@ -154,7 +154,7 @@ li {
 .application {
   -webkit-transform: scale(0.9);
   -webkit-transition: all 0.5s ease-in-out;
-  opacity: 0.7;
+  opacity: 0.5;
   object-fit: cover;
   border-radius: 2% !important;
 }
@@ -220,7 +220,27 @@ li {
 }
 
 .margin-content {
-  margin: 40px 0;
+  margin: 60px 0;
+}
+
+.work-margin {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-img {
+    height: 300px;
+  }
+  .work-margin {
+    margin: 0 0px;
+  }
+  .tech-text {
+    font-size: 12px;
+  }
+  .nav-margin {
+    margin: 20px 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -253,6 +273,9 @@ li {
   body,
   #about-me {
     margin: 0 10px;
+  }
+  .content-display {
+    opacity: 1;
   }
 }
 
@@ -288,9 +311,5 @@ li {
   }
   .name {
     font-size: 40px;
-  }
-
-  .content-display {
-    opacity: 1;
   }
 }
