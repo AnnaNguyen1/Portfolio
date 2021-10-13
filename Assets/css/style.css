@@ -150,17 +150,44 @@ li {
 }
 
 .github,
-.application,
-.work-img {
+.application {
   -webkit-transform: scale(0.98);
   -webkit-transition: all 0.5s ease-in-out;
   opacity: 0.9;
   object-fit: cover;
+  border-radius: 2% !important;
+}
+
+.image-div {
+  position: relative;
+}
+
+.image-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.image-div:hover::before,
+.image-div:focus::before {
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgb(0, 0, 0, 0.8)
+  );
+}
+
+.work-img {
+  object-fit: cover;
+  border-radius: 2% !important;
 }
 
 .github:hover,
-.application:hover,
-.work-img:hover {
+.application:hover {
   filter: none;
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1);
@@ -181,6 +208,28 @@ li {
 
 .contact-text {
   padding: 0 70px;
+}
+
+.content-display {
+  position: relative;
+  opacity: 0;
+  bottom: 8px;
+  left: 16px;
+  z-index: 4;
+}
+
+.content-display:hover {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.content-text {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  left: 0;
+  padding: 20px 15px;
 }
 
 @media screen and (max-width: 992px) {

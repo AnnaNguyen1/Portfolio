@@ -24,7 +24,7 @@
       <div class="container-fluid" id="nav-container">
         <a class="navbar-brand fs-2 fatface" href="#">A.</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -35,7 +35,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav" id="nav-links">
+          <div class="navbar-nav">
             <a class="nav-link" href="#about-me"><b>ABOUT ME</b></a>
             <a class="nav-link" href="#work-container"><b>PROJECTS</b></a>
             <a class="nav-link" href="#contact-container"><b>CONTACT</b></a>
@@ -100,56 +100,40 @@
           <div class="container-title-before fatface col-10 col-sm-8 d-flex flex-wrap column mt-5 justify-content-end"><h2 class="text-right z-index-1">Projects.</h2></div>
           <div class="col-2"></div>
         </section>
-        <div class="card-box d-flex flex-wrap row mt-5 mx-2 mx-md-5">
-          <div class="row">
-            <div class="col-2 col-xl-1"></div>
-            <div class="col-12 col-xl-10">
-              <div class="card border-dark my-sm-3 text-center">
-                <div class="card-body card-1">
-                  <h5 class="card-title card-1 tracking-journal poppins z-index-2"><b>Project 1: Tracking Journal</b></h5>
-                  <a href="https://annanguyen1.github.io/Track-Journal/homepage.html" target="_blank"><img class="card-img-top work-img" src="/Assets/images/TrackingJournal-1.bmp" alt="Track Journal Homepage" height="300px"></a>
-                  <p class="card-text mt-md-3 poppins"><small><b>Journal that allows users to search for parks within a given radius from an entered address and journal their experience.
-                    <br><br>HTML5, CSS, Javascript, Google Maps API, jQuery</b></small></p>
-                    <ul class="d-flex flex-wrap justify-content-center mt-md-1">
-                      <li><a href="https://github.com/AnnaNguyen1/Track-Journal" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
-                      <li><a href="https://annanguyen1.github.io/Track-Journal/homepage.html" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
-                    </ul>
+       
+        <section class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 mt-md-3 z-index-1">
+            <div class="image-div">
+              <img class="card-img-top work-img tj-img mt-3" src="/Assets/images/TrackingJournal-1.bmp" alt="Track Journal Homepage" height="400px" width="300px"></a>
+            </div>  
+            <div class="content-display">
+                <div class="content-text">
+                  <h3 class="poppins">Tracking Journal</h3>
+                  <p class="poppins"><small>Park finder and user journal</small></p>
+                  <p class="d-flex flex-wrap">
+                    <span class="d-block mb-1">HTML</span>
+                    <span class="d-block mb-1">CSS</span>
+                    <span class="d-block mb-1">Javascript</span>
+                    <span class="d-block mb-1">Google Maps API</span>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="col-xl-1"></div>
-            <div class="col-xl-1"></div>
-            <div class="col-12 col-xl-5 mt-3 mt-md-5">
-              <div class="card border-dark text-center">
-                <div class="card-body">
-                  <h5 class="card-title card-2 poppins"><b>Javascript Code Quiz</b></h5>
-                  <a href="https://annanguyen1.github.io/Code-Quiz/" target="_blank"><img class="card-img-top work-img" src="/Assets/images/CodeQuiz.bmp" alt="Javascript Code Quiz Page" height="228px"></a>
-                  <p class="card-text poppins mt-md-3"><small><b>Timed Javascript quiz that tests users knowledge on basic Javascript. Time will be deducted if questions are answered incorrectly.
-                  <br><br>HTML5, CSS, Javascript, Moment.js, Bootstrap</b></small></p>
-                  <ul class="d-flex flex-wrap justify-content-center mt-md-1">
-                    <li><a href="https://github.com/AnnaNguyen1/Code-Quiz" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
-                    <li><a href="https://annanguyen1.github.io/Code-Quiz/" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-xl-5 mt-3 mt-md-5">
-              <div class="card border-dark text-center">
-                <div class="card-body">
-                  <h5 class="card-title card-3 poppins"><b>Weather Dashboard</b></h5>
-                  <a href="https://annanguyen1.github.io/Weather-Dashboard/" target="_blank"><img class="card-img-top work-img" src="/Assets/images/WeatherDashboard.bmp" alt="Javascript Code Quiz Page" height="228px"></a>
-                  <p class="card-text poppins mt-md-3"><small><b>Dashboard that displays the current weather and 5 day forecast for a certain city that is entered. Cities searched will be saved for future reference.
-                    <br><br>HTML5, CSS, JS, Moment.js, Bootstrap, Open Weather API</b></small></p>
-                  <ul class="d-flex flex-wrap justify-content-center mt-md-1">
-                    <li><a href="https://github.com/AnnaNguyen1/Weather-Dashboard" class="mx-2 github" target="_blank"><img src="/Assets/images/github.png" width="20px" height="20px"></a></li>
-                    <li><a href="https://annanguyen1.github.io/Weather-Dashboard/" class="mx-2 application" target="_blank"><img src="/Assets/images/Open.png" width="20px" height="20px"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-1"></div>
           </div>
-        </div>
+          <div class="col-md-3 mt-md-3 z-index-1">
+            <a href="https://annanguyen1.github.io/Code-Quiz/" target="_blank"><img class="card-img-top work-img mt-3" src="/Assets/images/JSQuiz.gif" alt="Javascript Code Quiz Page" height="400px" width="300px"></a>
+          </div>
+          <div class="col-md-3"></div>
+        </section>
+
+        <section class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 z-index-1">
+            <a href="https://annanguyen1.github.io/Weather-Dashboard/" target="_blank"><img class="card-img-top work-img mt-3" src="/Assets/images/WeatherDashboard.bmp" alt="Javascript Code Quiz Page" height="400px" width="300px"></a>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+        </section>
       </container>
 
       <container id="contact-container" class="container d-flex flex-wrap column">
@@ -178,5 +162,7 @@
       </section>
       <p class= "poppins text-center">Built by Anna Nguyen.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
